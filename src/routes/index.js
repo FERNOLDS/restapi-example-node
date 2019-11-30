@@ -1,19 +1,14 @@
 //routes
-const {Router} = require("express");
-const router = Router
+const { Router } = require('express');
 
+const router = new Router();
 
-
-
-router.get("/test", (req, res) => {
+router.get('/test', (req, res) => {
     const data = {
-        "name": "fernando",
-        "website": "www.alvaradosa.com",
-        "frase": "soy el mejor "
-
-    }
+        name: 'Fazt',
+        website: 'faztweb.com'
+    };
     res.json(data);
+});  
 
-});
-
-module.expots = router
+module.exports = router;
